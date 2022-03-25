@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+    <div class = "loginpage-header-button">
+      <ion-button size="small" color="success" (click)="backToHome()" routerLink="/home">Back to Home</ion-button>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+      <div class="list">
+        <label class="item item-input">
+          <input type="email" placeholder="Email" required>
+        </label>
+        <br>
+        <label class="item item-input">
+          <input type="password" placeholder="Password" required>
+        </label>
+      </div>
+
+      <div class = "login-button">
+        <ion-button id="submit" size="small" color="success" (click)="loginSubmit()">Submit</ion-button>
+        <br>
+        <ion-card-button size="small" color="success" (click)="forgotPassword()" [routerLink]="">Forgot Password?</ion-card-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+
+<!-- Footer without a border -->
+<ion-footer class="ion-no-border">
+  <div class = "homepage-footer">
+    <p>This is my Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  </div>
+</ion-footer>
+

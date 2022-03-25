@@ -1,0 +1,12 @@
+{
+
+  "accounts": [
+    {
+      "email": "admin",
+      "password": "12345",
+      "validators": true,
+      "minLength": 20
+    }
+  ]
+
+}
